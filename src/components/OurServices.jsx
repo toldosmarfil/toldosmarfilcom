@@ -44,7 +44,7 @@ const OurServices = props => {
                         <div className="rat-content p-16">
                           <div className="boxservice-title">
                             <div className="h3">{post.frontmatter.title}   </div>
-                            <div className="text-14-m">
+                            <div className="boxservice-text text-14-m">
                             {post.frontmatter.subtitle} 
                             </div>
                             <svg

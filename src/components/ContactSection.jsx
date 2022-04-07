@@ -55,7 +55,7 @@ const ContactSection = () => {
       })
         .then(() => {
           setMessage(
-            "Thank you for contacting us. We will get right back to you!"
+            "Gracias por contactar con nosotros . Nos pondremos tan pronto como podamos en contacto con usted."
           )
           setForm(null)
         })
@@ -168,10 +168,10 @@ const ContactSection = () => {
                 <div className="row mb-16">
                   <div className="col-xs-12">
                     <input
-                      name="Nombre"
+                      name="Asunto"
                       type="text"
                       className="input"
-                      placeholder="Nombre"
+                      placeholder="Asunto"
                       onChange={e => handleChange(e)}
                     />
                   </div>

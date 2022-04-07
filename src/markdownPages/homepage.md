@@ -1,7 +1,7 @@
 ---
-seo_title: seotitle
-seo_description: seotitle
-seo_robots: all, noindex,nofollow
+seo_title: Bienvenidos a toldos marfil
+seo_description: Toldos marfil, la marca de los toldos en castelldefels
+seo_robots: all
 title: REDISEÑA TU ESPACIO
 subtitle: LA MARCA DE LOS TOLDOS, TOLDOS MARFIL
 page: true
@@ -46,13 +46,6 @@ listitems:
   - proyecto_imagen: /assets/images/gal-11.jpg
   - proyecto_imagen: /assets/images/gal-12.jpg
   - proyecto_imagen: /assets/images/gal-13.jpg
-  - proyecto_imagen: /assets/images/gal-14.jpg
-  - proyecto_imagen: /assets/images/gal-15.jpg
-  - proyecto_imagen: /assets/images/gal-16.jpg
-  - proyecto_imagen: /assets/images/gal-17.jpg
-  - proyecto_imagen: /assets/images/gal-18.jpg
-  - proyecto_imagen: /assets/images/gal-19.jpg
-  - proyecto_imagen: /assets/images/gal-20.jpg
 main_title: Elige Toldos Marfil
 beneficios:
   - proyecto_imagen: /assets/images/designer.jpg

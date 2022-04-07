@@ -142,7 +142,7 @@ const Blog = props => {
                   className="btn btn-invert btn--full"
                   onClick={showMoreItems}
                 >
-                  SEE MORE
+                  VER MÁS
                 </button>
               </div>
               <div className="col-xs-1 col-md-5"> </div>
