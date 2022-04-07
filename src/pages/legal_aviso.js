@@ -43,7 +43,7 @@ const LegalAviso = () => {
       </Helmet>
       <Seo title="Legal Aviso" description="Legal Aviso" />
       <Header offset="0" />
-      <section className=" pt-big ">
+      <section className=" pt-section ">
         <div className="container-3">
           <div className="row pb-16">
             <div className="col-xs-12 align-center">

@@ -45,7 +45,7 @@ beneficios:
 
 
 
-marcas_titulo: Trabajamos con primeras marcas del mercado de la protección solar
+marcas_titulo: Trabajamos los líderes del mercado en protección solar
 beneficio_subtitulo: Somos Toldos Marfil
 beneficio_description: Texto explicativos sobre nosotros
 beneficio_titulo: Beneficios de toldos marfil
@@ -58,7 +58,7 @@ inicio_title: Sobre      Toldos Marfil
 inicio_description_title: Confíe en los profesionales del toldo
 
 
-marcas_subtitulo: Ir a la cuenta
+marcas_subtitulo: Siempre con las primeras marcas
 Marcas:
   - marcas_imagen: /assets/images/tema2/brands/mitjavila.jpg
   - marcas_imagen: /assets/images/tema2/brands/sauleda.jpg

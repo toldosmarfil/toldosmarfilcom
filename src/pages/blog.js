@@ -76,9 +76,9 @@ const Blog = props => {
                           {posts && posts[0].node.frontmatter.blogtitle}
                         </div>
                       </div>
-                      <div className="col-xs-12">
+                      <div className="col-xs-12 col-sm-6">
                         <div className="text-16-r mb-16">
-                          {posts && posts[0].node.excerpt}
+                        {posts && posts[0].node.frontmatter.blogsubtitle}
                         </div>
                         <div className="text-date">
                           {posts && posts[0].node.frontmatter.date}
@@ -124,7 +124,7 @@ const Blog = props => {
                     <div className="fluid-4-b mb-16">
                       {post.frontmatter.blogtitle}
                     </div>
-                    <div className="text-14-r mb-16">{post.excerpt}</div>
+                    <div className="text-14-r mb-16">  {post.frontmatter.blogsubtitle} </div>
                     <div className="text-14-r">
                       <a className="text-date" href="">
                         {post.frontmatter.date}
@@ -181,6 +181,7 @@ export default () => (
               frontmatter {
                 path
                 blogtitle
+                blogsubtitle
                 thumbnail
                 date(formatString: "DD, MM, YYYY")
                 category

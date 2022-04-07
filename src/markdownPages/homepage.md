@@ -49,7 +49,7 @@ listitems:
 main_title: Elige Toldos Marfil
 beneficios:
   - proyecto_imagen: /assets/images/designer.jpg
-    beneficios_subtitulo: Dejáte aconsejar por los profesionales
+    beneficios_subtitulo: Déjate aconsejar por los profesionales
     beneficios_titulo: Asesoramiento y diseño
     beneficios_description: >-
       En Toldos Marfil diseñamos a medida sus ideas y proyectos dando vida a sus
@@ -64,8 +64,6 @@ beneficios:
         - Asesoramiento técnico profesional.
 
         &nbsp;
-
-      **“Toldos marfil”**
   - proyecto_imagen: /assets/images/tema2/gava.jpg
     beneficios_subtitulo: La calidad es nuestra marca
     beneficios_titulo: El producto

@@ -53,11 +53,11 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
                     <br />
                     <div className="fluid-3-r">{text}</div>
                     <br />
-                    {button && (
+{/*     Boton en el slider desactivado  {button && (
                       <div className="btn btn-phantom btn--medium">
                         VER MÁS
                       </div>
-                    )}
+                    )} */}
                   </div>
                   <div className="col-xs-4  col-md-6 "></div>
                 </div>
@@ -75,7 +75,7 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
                 <p> Damos vida a tus espacios. Rediseñamos ambientes.</p>
               </div>
               <div className="col-xs-6 col-sm-6 col-md-4">
-                <div className="text-16-b"> 02 COMPROMISO </div>
+                <div className="text-16-b"> 03 COMPROMISO </div>
                 <p> Damos vida a tus espacios. Rediseñamos ambientes.</p>
               </div>
             </div>
