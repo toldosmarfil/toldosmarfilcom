@@ -1,0 +1,224 @@
+backend:
+  name: git-gateway
+  repo: manuelruizredondo/weblabel
+  #repo: ali-baker/huss-gatsby
+media_folder: "static/assets/images"
+public_folder: "/assets/images"
+media_folder_relative: true
+
+collections:
+  - name: services
+    label: Services
+    folder: services
+    create: true
+    fields:
+      - { name: title, label: Title }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+        }
+      - { name: path, label: Path (service url) }
+      - {
+          label: "Blog Page",
+          name: "servicepage",
+          widget: "hidden",
+          default: true,
+        }
+      - label: "Beneficios"
+        name: "beneficios"
+        widget: "list"
+        fields:
+              - { label: "Beneficios Imagen", name: "beneficios_imagen", widget: "image", optional: true, required: false}
+              - { label: Beneficios SubTitulo, name: beneficios_subtitulo, widget: string }
+              - { label: Beneficios Titulo, name: beneficios_titulo, widget: string }
+              - { label: Beneficios Description, name: beneficios_description, widget: markdown }
+      - label: "Proyecto Imagen"
+        name: "listitems"
+        widget: "list"
+        fields:
+              - { label: "Proyecto Imagen", name: "proyecto_imagen", widget: "image", optional: true, required: false}
+      - label: "Keyword (One keyword per field)"
+        name: "keyword"
+        widget: "list"
+        fields:
+          - { label: "Blog Keyword", name: "blog_keyword", widget: "string", optional: true, required: false}
+  - name: blog
+    label: Blog
+    folder: blog
+    create: true
+    fields:
+      - { label: Seo Title (máx 65), name: seo_title, widget: string }
+      - { label: Seo description (max 150), name: seo_description, widget: string }
+      - { name: blogtitle, label: Página noticia titulo }
+      - { name: blogsubtitle, label: Página noticia subtitulo y presentación }
+      - { name: blogsubtitle, label: Página noticia Subtitulo }
+      - { name: path, label: Path (post url) }
+      - { name: date, label: Date, widget: datetime }
+      - { name: category, label: Category}
+
+      - {
+          label: "Blog Page",
+          name: "blogpage",
+          widget: "hidden",
+          default: true,
+        }
+      - {
+          label: "Featured Image",
+          name: "thumbnail",
+          widget: "image",
+        }
+      - { name: body, label: Body, widget: markdown }
+      - label: "Keyword (One keyword per field)"
+        name: "keyword"
+        widget: "list"
+        fields:
+          - { label: "Blog Keyword", name: "blog_keyword", widget: "string", optional: true, required: false}
+
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "About"
+        name: "About"
+        file: "src/markdownPages/about.md"
+        fields:
+          - { label: Seo Title (máx 65), name: seo_title, widget: string }
+          - { label: Seo description (max 150), name: seo_description, widget: string }
+          - { label: Slider Titulo, name: title, widget: string }
+          - { label: Slider SubTitulo, name: subtitle, widget: string }
+          - {
+              label: "Page",
+              name: "page",
+              widget: "hidden",
+              default: true,
+            }
+          - {
+              label: "Slider Imagen",
+              name: "thumbnail",
+              widget: "image",
+              default: "",
+            }
+          - { label: inicio Titulo, name: inicio_title, widget: string }
+          - { label: inicio Description Titulo, name: inicio_description_title, widget: string }
+          - { label: inicio Description, name: inicio_description, widget: markdown }
+          - {
+              label: "inicio Imagen",
+              name: "inicio_thumbnail",
+              widget: "image",
+              default: "",
+            }
+          - label: "Beneficios"
+            name: "beneficios"
+            widget: "list"
+            fields:
+              - { label: "Proyecto Imagen", name: "proyecto_imagen", widget: "image", optional: true, required: false}
+              - { label: Beneficios SubTitulo, name: beneficios_subtitulo, widget: string }
+              - { label: Beneficios Titulo, name: beneficios_titulo, widget: string }
+              - { label: Beneficios Description, name: beneficios_description, widget: markdown }
+          - { label: Marcas Subtitulo, name: marcas_subtitulo, widget: string }
+          - { label: Marcas Titulo, name: marcas_titulo, widget: string }
+          - label: "Marcas Imagen"
+            name: "Marcas"
+            widget: "list"
+            fields:
+              - { label: "Marcas Imagen", name: "marcas_imagen", widget: "image" }
+      - label: "Homepage"
+        name: "Homepage"
+        file: "src/markdownPages/homepage.md"
+        fields:
+          - { label: Seo Title (máx 65), name: seo_title, widget: string }
+          - { label: Seo description (max 150), name: seo_description, widget: string }
+          - { label: "Seo Robots (all, noindex, norobots) ", name: seo_robots, widget: string }
+          - { label: Slider Titulo, name: title, widget: string }
+          - { label: Slider SubTitulo, name: subtitle, widget: string }
+          - {
+              label: "Page",
+              name: "page",
+              widget: "hidden",
+              default: true,
+            }          
+          - { label: 'Video (MP4 only)', name: "video", widget: "file", multiple: false,  }
+          - {
+              label: "Slider Imagen",
+              name: "thumbnail",
+              widget: "image",
+              default: "",
+            }
+          - { label: inicio Titulo, name: inicio_title, widget: string }
+          - { label: inicio Description Titulo, name: inicio_description_title, widget: string }
+          - { label: inicio Description, name: inicio_description, widget: markdown }
+          - {
+              label: "inicio Imagen",
+              name: "inicio_thumbnail",
+              widget: "image",
+              default: "",
+            }
+          - { label: Proyecto Subtitulo, name: proyecto_subtitulo, widget: string }
+          - { label: Proyecto Titulo, name: proyecto_titulo, widget: string }
+          - label: "Proyecto Imagen"
+            name: "listitems"
+            widget: "list"
+            fields:
+              - { label: "Proyecto Imagen", name: "proyecto_imagen", widget: "image" }
+          - { label: Bloque Titulo, name: bloque_titulo, widget: string }
+          - { label: Bloque Description, name: bloque_description, widget: markdown }
+          - { label: Main Titulo, name: main_title, widget: string }
+          - { label: Main Subtitulo, name: main_subtitulo, widget: string }
+          - { label: Main Description, name: main_description, widget: markdown }
+
+          - label: "Beneficios"
+            name: "beneficios"
+            widget: "list"
+            fields:
+              - { label: "Proyecto Imagen", name: "proyecto_imagen", widget: "image", optional: true, required: false}
+              - { label: Beneficios SubTitulo, name: beneficios_subtitulo, widget: string }
+              - { label: Beneficios Titulo, name: beneficios_titulo, widget: string }
+              - { label: Beneficios Description, name: beneficios_description, widget: markdown }
+          - { label: Marcas Subtitulo, name: marcas_subtitulo, widget: string }
+          - { label: Marcas Titulo, name: marcas_titulo, widget: string }
+          - label: "Marcas Imagen"
+            name: "Marcas"
+            widget: "list"
+            fields:
+              - { label: "Marcas Imagen", name: "marcas_imagen", widget: "image" }
+      - label: "Contacto"
+        name: "Contacto"
+        file: "src/markdownPages/contacto.md"
+        fields:
+          - { label: Seo Title (máx 65), name: seo_title, widget: string }
+          - {
+              label: "Page",
+              name: "page",
+              widget: "hidden",
+              default: true,
+            }
+          - { label: Seo description (max 150), name: seo_description, widget: string }
+          - { label: Contacto Titulo, name: contacto_titulo, widget: string }
+          - { label: Contacto SubTitulo, name: contacto_subtitulo, widget: string }
+          - { label: Direction , name: direction, widget: string }
+          - { label: Direction Link, name: direction_link, widget: string }
+          - { label: Email Titulo, name: email_titulo, widget: string }
+          - { label: Email, name: email, widget: string }
+          - { label: Telephono Titulo, name: telefono_titulo, widget: string }
+          - { label: Telephono, name: telefono, widget: string }
+          - { label: WhatsApp Titulo, name: whatsapp_titulo, widget: string }
+          - { label: WhatsApp, name: whatsapp, widget: string }
+          - { label: Contacta Pregunta, name: contacta_pregunta, widget: string }
+          - { label: check acepta la politica, name: check_acepta_la_politica, widget: string }
+          - { label: Contacta Cta, name: contacta_cta, widget: string }
+          - { label: Contacta Map, name: contacta_map, widget: string }
+      - label: "Servicios"
+        name: "Servicios"
+        file: "src/markdownPages/servicios.md"
+        fields:
+          - {
+              label: "Page",
+              name: "page",
+              widget: "hidden",
+              default: true,
+            }
+          - { label: Seo Title (máx 65), name: seo_title, widget: string }
+          - { label: Seo description (max 150), name: seo_description, widget: string }
+          - { label: Servicios Titulo, name: servicios_titulo, widget: string }
+          - { label: Servicios SubTitulo, name: servicios_subtitulo, widget: string }
+          - { label: "Servicios Imagen", name: "servicios_imagen", widget: "image" }    
