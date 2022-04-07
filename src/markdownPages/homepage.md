@@ -56,7 +56,7 @@ beneficios:
       espacios. 
       Toldos marfil les ofrece la mas amplia gama de : 
 
-        - Lonas acrilicas.
+        - Lonas acrílicas.
         - Lonas plastificadas.
         - Fibra de vidrio.
         - Perfiles de alumnio lacado.
@@ -75,7 +75,7 @@ beneficios:
       #### ***Estructuras de aluminio***
        Lacadas con una amplia de gama de colores capaces de armonizar con el entorno de su espacio.
       #### ***Motorización y domotización***
-       los diferentes sistemas de protección solar que ofrecemos mediante control remoto, sensores de viento o sol y los más avanzados asistentes de voz disponibles en el mercado.
+       Los diferentes sistemas de protección solar que ofrecemos mediante control remoto, sensores de viento o sol y los más avanzados asistentes de voz disponibles en el mercado.
   - proyecto_imagen: /assets/images/tema2/renata.jpg
     beneficios_subtitulo: Visítanos
     beneficios_titulo: Exposición

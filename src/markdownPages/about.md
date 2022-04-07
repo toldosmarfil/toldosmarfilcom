@@ -9,10 +9,10 @@ inicio_description: >-
     el sector, en constante renovación y adaptándonos a los tiempos actuales, incorporando los últimos avances tecnológicos en el campo de la motorizacion de sistemas de proteccion solar.
     Le dedicamos trabajo y espero en la calidad de la instalacion. La instalación solo se puede realizar por profesionales cualificados, ya que de otra forma el material adquirido no cubrirá las funciones deseadas .
       
-    Una buena instalación es una garantia de un buen funcionamiento.
+    Una buena instalación es garantía de un buen funcionamiento.
     Toldos marfil les ofrece la mas amplia gama de :
 
-    -Lonas acrilicas
+    -Lonas acrílicas
 
     -Lonas plastificadas
 

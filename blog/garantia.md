@@ -6,7 +6,7 @@ blogtitle: Nuestra Garantia
 blogsubtitle: Nuestros ensayos y técnicas realizadas en laboratorios cualificados a través de los años nos demuestran que los toldos Marfil tienen una vida superior de los años ofrecidos en la garantía.
 path: Garantia_toldosmarfil
 date: 2022-01-22T15:49:58.327Z
-category: Toldosmarfil, Mobile
+category: Toldosmarfil, Garantía
 blogpage: true
 thumbnail: /assets/images/blog/garantia-3.jpg
 keyword:

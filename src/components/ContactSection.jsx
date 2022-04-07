@@ -185,7 +185,7 @@ const ContactSection = () => {
                       cols="45"
                       rows="8"
                       aria-required="true"
-                      placeholder="Escribenos tus comentarios..."
+                      placeholder="Escribe tus comentarios..."
                       onChange={e => handleChange(e)}
                     ></textarea>
                   </div>
@@ -221,19 +221,19 @@ const ContactSection = () => {
                         </label>
                       </div>
                       <span className="text-14-r">
-                        Checkbox básico, &nbsp;
+                        Acepta nuestra , &nbsp;
                         <Link
                           className="link4"
                           to={"/" + content.check_acepta_la_politica}
                           target="_blank"
                         >
-                          politica privacidad
+                          política de privacidad
                         </Link>
                       </span>
                     </div>
                     {checkError && (
                       <span className="is-error text-14-r ">
-                        You need check this Error checkbox
+                       Tienes que aceptar nuestras políticas.
                       </span>
                     )}
                   </div>
