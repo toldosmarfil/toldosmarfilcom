@@ -41,7 +41,7 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
               }
             </div>
           </div>
-          <div className="row height-full ">
+          <div className="row height-home ">
             <div className="col-xs-12 is-flex">
               <div className="container is-flex">
                 <div className="row pt-big">

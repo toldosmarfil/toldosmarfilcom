@@ -640,8 +640,15 @@ nav[role="navigation"] {
   position: absolute;
   right: 0;
   bottom: -50px;
+  p{
+    display: none;
+  }
   @media (min-width: 768px) {
     width: calc(85% - 52px);
+
+    p{
+      display: block;
+    }
   }
 }
 
@@ -783,4 +790,12 @@ blockquote{
     filter: saturate(1);
     opacity: 1;
   }
+}
+
+.height-home{
+height: 600px;
+  @media (min-width: 1280px) {
+    height: 100vh;
+  }
+
 }

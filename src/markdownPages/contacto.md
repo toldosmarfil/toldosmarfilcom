@@ -11,8 +11,8 @@ empresa_dni: 5289898989W
 email: info@toldosmarfil.com
 whatsapp: +34 635 95 66 79
 empresa_legal_direccion: direccion de toldos marfil
-direction_link: https://goo.gl/maps/1xzki9TqpY2tYV5t5
-contacta_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.1975432453573!2d1.9794429514180945!3d41.28280497917224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a482b6382584eb%3A0xd0d43bc856ede1da!2sCarrer%20d&#39;Arcadi%20Balaguer%2C%2077%2C%2008860%20Castelldefels%2C%20Barcelona!5e0!3m2!1ses!2ses!4v1649323080032!5m2!1ses!2ses
+direction_link: https://goo.gl/maps/kEK6MhXZEc4PpANt8
+contacta_map: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13806.241402992406!2d1.9822030838856337!3d41.29094537207505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a482b638b7eb37%3A0x5d468ec22f7052ab!2sToldos%20Marfil!5e0!3m2!1ses!2ses!4v1649414492723!5m2!1ses!2ses
 
 email_titulo: Email de la empresa
 telefono_titulo: Teléfono
