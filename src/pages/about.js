@@ -1,16 +1,14 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Hero from "../components/Hero"
-import MainSection from "../components/MainSection"
-import TextImage from "../components/TextImage"
-import image from "../../static/assets/images/tema2/benefit1.jpg"
-import image1 from "../../static/assets/images/tema2/benefit2.jpg"
-import image2 from "../../static/assets/images/tema2/benefit3.jpg"
-import Partners from "../components/Partners"
-import ContactSection from "../components/ContactSection"
-import Footer from "../components/footer"
-import HeadingSection from "../components/HeadingSection"
-import Seo from "../components/seo"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Hero from "../components/Hero";
+import MainSection from "../components/MainSection";
+import TextImage from "../components/TextImage";
+import Partners from "../components/Partners";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/footer";
+import HeadingSection from "../components/HeadingSection";
+import Seo from "../components/seo";
+
 const About = () => {
   const data = useStaticQuery(graphql`
     query AboutQuery {
@@ -43,10 +41,10 @@ const About = () => {
         }
       }
     }
-  `)
+  `);
 
-  const content = data.markdownRemark.frontmatter
-  const word = content.inicio_title.split(" ")
+  const content = data.markdownRemark.frontmatter;
+  const word = content.inicio_title.split(" ");
 
   return (
     <>
@@ -92,7 +90,7 @@ const About = () => {
       <ContactSection />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

@@ -1,22 +1,21 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import { Helmet } from "react-helmet"
-import "../../scss/style.scss"
-import "../../scss/components/header2.scss"
-import Footer from "../components/footer"
-import Hero from "../components/Hero"
-import MainSection from "../components/MainSection"
-import Portfolio from "../components/homepage/Portfolio"
-import Portfolio2 from "../components/homepage/Portfolio2"
-import TextSection from "../components/TextSection"
-import TextImage from "../components/TextImage"
-import Partners from "../components/Partners"
-import DoubleImage from "../components/DoubleImage"
-import LatestNews from "../components/LatestNews"
-import OurServices from "../components/OurServices"
-import ContactSection from "../components/ContactSection"
-import HeadingSection from "../components/HeadingSection"
-import Seo from "../components/seo"
+import React, { useEffect, useState } from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import { Helmet } from "react-helmet";
+import "../../scss/style.scss";
+import "../../scss/components/header2.scss";
+import Footer from "../components/footer";
+import Hero from "../components/Hero";
+import MainSection from "../components/MainSection";
+import Portfolio2 from "../components/homepage/Portfolio2";
+import TextSection from "../components/TextSection";
+import TextImage from "../components/TextImage";
+import Partners from "../components/Partners";
+import DoubleImage from "../components/DoubleImage";
+import LatestNews from "../components/LatestNews";
+import OurServices from "../components/OurServices";
+import ContactSection from "../components/ContactSection";
+import HeadingSection from "../components/HeadingSection";
+import Seo from "../components/seo";
 const Index = () => {
   const data = useStaticQuery(graphql`
     query IndexQuery {
@@ -28,6 +27,7 @@ const Index = () => {
           title
           subtitle
           thumbnail
+          mobilethumbnail
           video
           inicio_title
           inicio_description_title
@@ -36,6 +36,7 @@ const Index = () => {
           proyecto_titulo
           listitems {
             proyecto_imagen
+            alt
           }
           bloque_titulo
           bloque_description
@@ -57,14 +58,20 @@ const Index = () => {
           DoubleImage {
             DoubleImage_imagen
           }
-
         }
       }
     }
-  `)
+  `);
 
-  const content = data.markdownRemark.frontmatter
-  const word = content.inicio_title.split(" ")
+  const content = data.markdownRemark.frontmatter;
+  const word = content.inicio_title.split(" ");
+
+  const [load, setLoad] = useState(false);
+  useEffect(() => {
+    setTimeout(() => {
+      setLoad(true);
+    }, 5000);
+  }, []);
 
   return (
     <>
@@ -72,6 +79,8 @@ const Index = () => {
         <script
           type="text/javascript"
           src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          defer
+          async
         ></script>
       </Helmet>
       <Seo title={content.seo_title} description={content.seo_description} />
@@ -79,8 +88,9 @@ const Index = () => {
         heading={content.title}
         text={content.subtitle}
         bgImage={content.thumbnail}
+        bgMobileImage={content.mobilethumbnail}
         button={true}
-        video={content.video} 
+        video={content.video}
       />
       <MainSection
         firstHeading={word.slice(0, -1).join(" ")}
@@ -95,7 +105,12 @@ const Index = () => {
         subTitle={content.marcas_subtitulo}
         images={content.DoubleImage}
       />
-      <Portfolio2 title={content.proyecto_titulo} images={content.listitems} />
+      {load && (
+        <Portfolio2
+          title={content.proyecto_titulo}
+          images={content.listitems}
+        />
+      )}
 
       <HeadingSection
         sub={content.main_subtitulo}
@@ -125,7 +140,7 @@ const Index = () => {
       <ContactSection />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Index
+export default Index;

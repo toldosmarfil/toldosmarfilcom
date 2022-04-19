@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, graphql, StaticQuery } from "gatsby"
-import Image from "../components/Image"
-import PropTypes from "prop-types"
-const OurServices = props => {
-  const { data } = props
-  const { edges: posts } = data.allMarkdownRemark
+import React from "react";
+import { Link, graphql, StaticQuery } from "gatsby";
+import Image from "../components/Image";
+import PropTypes from "prop-types";
+const OurServices = (props) => {
+  const { data } = props;
+  const { edges: posts } = data.allMarkdownRemark;
   return (
     <>
       <section className="pt-section pb-md">
@@ -19,8 +19,7 @@ const OurServices = props => {
                 Nuestros <br />
                 Servicios
               </div>
-              <p className="p1">Nos encargamos de todo
- </p>
+              <p className="p1">Nos encargamos de todo</p>
             </div>
             <div className="col-xs-4 col-sm-6 align-bottom text-right is-flex content-end mb-16">
               <a href="/servicios">
@@ -43,9 +42,9 @@ const OurServices = props => {
                       <div className="rat-1-1">
                         <div className="rat-content p-16">
                           <div className="boxservice-title">
-                            <div className="h3">{post.frontmatter.title}   </div>
+                            <div className="h3">{post.frontmatter.title} </div>
                             <div className="boxservice-text text-14-m">
-                            {post.frontmatter.subtitle} 
+                              {post.frontmatter.subtitle}
                             </div>
                             <svg
                               width="26"
@@ -60,12 +59,23 @@ const OurServices = props => {
                               />
                             </svg>
                           </div>
-                          <div
+                          {/* <div
                             className="boxservice-img"
                             style={{
                               backgroundImage: `url(${post.frontmatter.thumbnail})`,
                             }}
-                          ></div>
+                          ></div> */}
+                          <div
+                            className="boxservice-img"
+                            style={{ height: "100%" }}
+                          >
+                            <Image
+                              name={post.frontmatter.thumbnail.replace(
+                                "/assets/images/",
+                                ""
+                              )}
+                            />
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -76,8 +86,8 @@ const OurServices = props => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
 OurServices.propTypes = {
   data: PropTypes.shape({
@@ -85,7 +95,7 @@ OurServices.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export default () => (
   <StaticQuery
@@ -113,4 +123,4 @@ export default () => (
     `}
     render={(data, count) => <OurServices data={data} count={count} />}
   />
-)
+);

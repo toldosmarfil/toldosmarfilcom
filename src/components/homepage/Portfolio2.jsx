@@ -1,17 +1,16 @@
-import React, { useEffect, useState } from "react"
-import Swiper from "swiper/bundle"
-import { Dialog } from "@reach/dialog"
-import "@reach/dialog/styles.css"
-import "swiper/css"
-import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox"
+import React, { useEffect, useState } from "react";
+import Swiper from "swiper/bundle";
+import { Dialog } from "@reach/dialog";
+import "@reach/dialog/styles.css";
+import Image from "../Image";
+import "swiper/css";
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 
 const Portfolio2 = ({ title, images }) => {
   useEffect(() => {
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "horizontal",
-      slidesPerView: 5,
-      spaceBetween: 10,
 
       loop: true,
       // If we need pagination
@@ -24,16 +23,39 @@ const Portfolio2 = ({ title, images }) => {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
       },
+      breakpoints: {
+        250: {
+          slidesPerView: 2.5,
+          spaceBetween: 4,
+        },
+        640: {
+          slidesPerView: 2.5,
+          spaceBetween: 4,
+        },
+        768: {
+          slidesPerView: 3.5,
+          spaceBetween: 8,
+        },
+        1024: {
+          slidesPerView: 4.5,
+          spaceBetween: 16,
+        },
+    
+        1500: {
+          slidesPerView: 5.5,
+          spaceBetween: 16,
+        },
+      },
 
       // And if we need scrollbar
       scrollbar: {
         el: ".swiper-scrollbar",
       },
-    })
-  }, [])
+    });
+  }, []);
 
-  const [showLightBox, SetShowLightBox] = useState(false)
-  const imageRef = React.useRef("")
+  const [showLightBox, SetShowLightBox] = useState(false);
+  const imageRef = React.useRef("");
   return (
     <>
       <section className="bg-cream pt-section pb-md">
@@ -80,13 +102,22 @@ const Portfolio2 = ({ title, images }) => {
                     </div>
 
                     <div className="swiper-wrapper">
-                      {images.map(image => (
+                      {images.map((image) => (
                         <>
                           <div className="swiper-slide">
                             <a href={image.proyecto_imagen}>
-                              <img
+                              {/* <img
                                 src={image.proyecto_imagen}
-                                alt={image.proyecto_imagen}
+                                alt={image.alt}
+                                width="100%"
+                                height="100%"
+                              /> */}
+                              <Image
+                                name={image.proyecto_imagen.replace(
+                                  "/assets/images/",
+                                  ""
+                                )}
+                                alt={image.alt}
                               />
                             </a>
                           </div>
@@ -103,7 +134,7 @@ const Portfolio2 = ({ title, images }) => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Portfolio2
+export default Portfolio2;

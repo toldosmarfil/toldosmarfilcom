@@ -11,6 +11,7 @@ module.exports = {
     "gatsby-plugin-sass",
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -18,7 +19,7 @@ module.exports = {
           formats: [`auto`, `webp`],
           placeholder: `dominantColor`,
           quality: 100,
-          breakpoints: [750, 1080, 1366, 1920],
+          breakpoints: [500, 750, 1080, 1366, 1920],
           backgroundColor: `transparent`,
           tracedSVGOptions: {},
           blurredOptions: {},
@@ -113,7 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `WebLabel`,
         short_name: `starter`,
         start_url: `/`,
         background_color: `#663399`,
@@ -126,6 +127,6 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
   ],
 };

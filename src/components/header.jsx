@@ -1,30 +1,31 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "gatsby"
-import "../../scss/components/header2.scss"
+import React, { useState, useEffect } from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import "../../scss/components/header2.scss";
 
 const Header = ({ offset }) => {
-  const [open, setOpen] = useState(false)
-  const [headerClassName, setHeaderClassName] = useState("")
-  const [pageOffset, setPageOffset] = useState(offset)
+  const [open, setOpen] = useState(false);
+  const [headerClassName, setHeaderClassName] = useState("");
+  const [pageOffset, setPageOffset] = useState(offset);
 
-  const handleScroll = headerClassName => {
+  const handleScroll = (headerClassName) => {
     if (headerClassName !== "menuscroll" && window.pageYOffset >= pageOffset) {
-      setHeaderClassName("menuscroll")
+      setHeaderClassName("menuscroll");
     } else if (
       headerClassName === "menuscroll" &&
       window.pageYOffset < pageOffset
     ) {
-      setHeaderClassName("")
+      setHeaderClassName("");
     }
-  }
+  };
 
   React.useEffect(() => {
-    window.onscroll = () => handleScroll(headerClassName)
-  }, [headerClassName])
+    window.onscroll = () => handleScroll(headerClassName);
+  }, [headerClassName]);
 
   React.useEffect(() => {
-    handleScroll(headerClassName)
-  }, [])
+    handleScroll(headerClassName);
+  }, []);
 
   return (
     <>
@@ -35,8 +36,10 @@ const Header = ({ offset }) => {
               <div className="col-xs-6  text-left align-middle">
                 <Link className="fluid-2-l" to="/">
                   <h2 className="h2 logoon">
-                  <img src="../assets/images/tema2/logo.png" alt="" />
-
+                    <StaticImage
+                      src="../assets/images/tema2/logo.png"
+                      alt="logo"
+                    />
                   </h2>
                 </Link>
               </div>
@@ -49,7 +52,7 @@ const Header = ({ offset }) => {
                       open ? "toggle menu-mobile open" : "toggle menu-mobile"
                     }
                     onClick={() => {
-                      setOpen(!open)
+                      setOpen(!open);
                     }}
                   >
                     <div>
@@ -118,7 +121,7 @@ const Header = ({ offset }) => {
         </div>
       </div> */}
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

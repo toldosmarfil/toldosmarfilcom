@@ -1,10 +1,9 @@
-import React from "react"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
-import Header from "./header"
-import bg from "../assets/images/tema2/home2.jpg"
-
-const Hero = ({ heading, text, button, bgImage, video }) => {
-  const image = getImage(bgImage)
+import React from "react";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import Header from "./header";
+import Image from "./Image";
+const Hero = ({ heading, text, button, bgImage, bgMobileImage, video }) => {
+  const image = getImage(bgImage);
 
   return (
     <>
@@ -13,7 +12,7 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
         <div className="bg-dark">
           <div className="cover__bg-item">
             <div className="cover__video">
-   {/*            {video ? (
+              {/*            {video ? (
                 <video
                   src={video}
                   type="video/mp4"
@@ -32,12 +31,12 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
               )} */}
 
               {
-                       <img
-                       src={bgImage}
-                       sizes="
+                <img
+                  src={bgImage}
+                  sizes="
                       (min-width: 40em) calc(66.6vw - 4em),
                       100vw"
-                     />
+                />
               }
             </div>
           </div>
@@ -45,15 +44,21 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
             <div className="col-xs-12 is-flex">
               <div className="container is-flex">
                 <div className="row pt-big">
-                  <div className=" col-xs-8 col-md-12  ">
-                  <img className="mb-32" width="250px" src="../assets/images/tema2/logo-invert.png" alt="" />
-
+                  <div className=" col-xs-9 col-md-12  ">
+                    <StaticImage
+                      className="mb-32"
+                      width="270px"
+                      height="240px"
+                      objectFit="contain"
+                      src="../assets/images/tema2/logo-invert.png"
+                      alt=""
+                    />
 
                     <div className="fluid-2-b">{heading}</div>
                     <br />
                     <div className="fluid-3-r">{text}</div>
                     <br />
-{/*     Boton en el slider desactivado  {button && (
+                    {/*     Boton en el slider desactivado  {button && (
                       <div className="btn btn-phantom btn--medium">
                         VER MÁS
                       </div>
@@ -83,7 +88,7 @@ const Hero = ({ heading, text, button, bgImage, video }) => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;

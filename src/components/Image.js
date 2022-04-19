@@ -1,8 +1,8 @@
-import { StaticQuery, graphql } from "gatsby"
-import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image"
-import React from "react"
+import { StaticQuery, graphql } from "gatsby";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
+import React from "react";
 
-const Image = props => (
+const Image = (props) => (
   <StaticQuery
     query={graphql`
       query {
@@ -14,10 +14,10 @@ const Image = props => (
               relativePath
               name
               childImageSharp {
-
                 gatsbyImageData(
                   placeholder: BLURRED
                   formats: [AUTO, WEBP, AVIF]
+                  layout: CONSTRAINED
                 )
               }
             }
@@ -25,19 +25,24 @@ const Image = props => (
         }
       }
     `}
-    render={data => {
-      const image = data.images.edges.find(n => {
+    render={(data) => {
+      const image = data.images.edges.find((n) => {
         if (n.node.relativePath.includes(props.name)) {
-          return n.node.childImageSharp.gatsbyImageData
+          return n.node.childImageSharp.gatsbyImageData;
         }
-      })
+      });
       if (!image) {
-        return null
+        return null;
       }
 
-      return <GatsbyImage image={image.node.childImageSharp.gatsbyImageData} />
+      return (
+        <GatsbyImage
+          image={image.node.childImageSharp.gatsbyImageData}
+          alt={props.alt ? props.alt : ""}
+        />
+      );
     }}
   />
-)
+);
 
-export default Image
+export default Image;

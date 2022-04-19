@@ -52,7 +52,6 @@ collections:
       - { label: Seo description (max 150), name: seo_description, widget: string }
       - { name: blogtitle, label: Página noticia titulo }
       - { name: blogsubtitle, label: Página noticia subtitulo y presentación }
-      - { name: blogsubtitle, label: Página noticia Subtitulo }
       - { name: path, label: Path (post url) }
       - { name: date, label: Date, widget: datetime }
       - { name: category, label: Category}
@@ -95,6 +94,12 @@ collections:
           - {
               label: "Slider Imagen",
               name: "thumbnail",
+              widget: "image",
+              default: "",
+            }
+          - {
+              label: "Mobile Slider Imagen",
+              name: "mobilethumbnail",
               widget: "image",
               default: "",
             }
@@ -160,6 +165,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Proyecto Imagen", name: "proyecto_imagen", widget: "image" }
+              - { label: "Imagen Titulo", name: "alt", widget: "string" }
           - { label: Bloque Titulo, name: bloque_titulo, widget: string }
           - { label: Bloque Description, name: bloque_description, widget: markdown }
           - { label: Main Titulo, name: main_title, widget: string }

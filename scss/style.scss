@@ -225,6 +225,7 @@ hr {
       background-color: $secondary;
       position: absolute;
       bottom: 0;
+      left: 0px;
       z-index: -1;
       transition: all 0.4s ease;
     }
@@ -280,6 +281,9 @@ hr {
     background-color: $secondary;
     background-position: center;
     background-size: cover;
+    .gatsby-image-wrapper-constrained{
+      height: 100% !important;
+    }
     &:after {
       background-color: $secondary;
       content: "";

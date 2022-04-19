@@ -1,23 +1,23 @@
-import React, { useState, useEffect } from "react"
-import ContactSection from "../components/ContactSection"
-import Footer from "../components/footer"
-import Header from "../components/header"
-import { Link, graphql, StaticQuery } from "gatsby"
-import Image from "../components/Image"
-import PropTypes from "prop-types"
-import Seo from "../components/seo"
+import React, { useState } from "react";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import { Link, graphql, StaticQuery } from "gatsby";
+import Image from "../components/Image";
+import PropTypes from "prop-types";
+import Seo from "../components/seo";
 
-const Blog = props => {
-  const { data } = props
-  const { edges: posts } = data.allMarkdownRemark
+const Blog = (props) => {
+  const { data } = props;
+  const { edges: posts } = data.allMarkdownRemark;
 
-  const [visible, setVisible] = useState(3)
+  const [visible, setVisible] = useState(3);
 
   const showMoreItems = () => {
-    setVisible(prevValue => prevValue + 3)
-  }
+    setVisible((prevValue) => prevValue + 3);
+  };
 
-  console.log(data, "data")
+  console.log(data, "data");
   return (
     <>
       <Seo title="Blog Section" description="Find the latest News" />
@@ -78,7 +78,7 @@ const Blog = props => {
                       </div>
                       <div className="col-xs-12 col-sm-6">
                         <div className="text-16-r mb-16">
-                        {posts && posts[0].node.frontmatter.blogsubtitle}
+                          {posts && posts[0].node.frontmatter.blogsubtitle}
                         </div>
                         <div className="text-date">
                           {posts && posts[0].node.frontmatter.date}
@@ -124,7 +124,10 @@ const Blog = props => {
                     <div className="fluid-4-b mb-16">
                       {post.frontmatter.blogtitle}
                     </div>
-                    <div className="text-14-r mb-16">  {post.frontmatter.blogsubtitle} </div>
+                    <div className="text-14-r mb-16">
+                      {" "}
+                      {post.frontmatter.blogsubtitle}{" "}
+                    </div>
                     <div className="text-14-r">
                       <a className="text-date" href="">
                         {post.frontmatter.date}
@@ -153,8 +156,8 @@ const Blog = props => {
       <ContactSection />
       <Footer />
     </>
-  )
-}
+  );
+};
 
 Blog.propTypes = {
   data: PropTypes.shape({
@@ -162,7 +165,7 @@ Blog.propTypes = {
       edges: PropTypes.array,
     }),
   }),
-}
+};
 
 export default () => (
   <StaticQuery
@@ -193,4 +196,4 @@ export default () => (
     `}
     render={(data, count) => <Blog data={data} count={count} />}
   />
-)
+);

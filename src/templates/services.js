@@ -1,11 +1,10 @@
-import React from "react"
-import { graphql, Link } from "gatsby"
-import ContactSection from "../components/ContactSection"
-import Footer from "../components/footer"
-import Header from "../components/header"
-import Portfolio from "../components/homepage/Portfolio"
-import TextImage from "../components/TextImage"
-import ServiceTextImage from "../components/ServiceTextImage"
+import React from "react";
+import { graphql } from "gatsby";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/footer";
+import Header from "../components/header";
+
+import ServiceTextImage from "../components/ServiceTextImage";
 
 export const query = graphql`
   query ($slug: String!) {
@@ -30,9 +29,9 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-const Service = props => {
+const Service = (props) => {
   return (
     <>
       <Header offset="0" />
@@ -45,7 +44,7 @@ const Service = props => {
           reverse={index % 2 === 0 ? false : true}
         />
       ))}
-{/*       <Portfolio
+      {/*       <Portfolio
         title="Our Work"
         images={props.data.markdownRemark.frontmatter.listitems}
       /> */}
@@ -55,11 +54,13 @@ const Service = props => {
             <hr className="mt-48" />
             <ul className="list-clear list-inline text-12-r">
               {props.data.markdownRemark.frontmatter.keyword
-                ? props.data.markdownRemark.frontmatter.keyword.map(keyword => (
-                    <li>
-                      <a href=""> {keyword.blog_keyword} </a>
-                    </li>
-                  ))
+                ? props.data.markdownRemark.frontmatter.keyword.map(
+                    (keyword) => (
+                      <li>
+                        <a href=""> {keyword.blog_keyword} </a>
+                      </li>
+                    )
+                  )
                 : ""}
             </ul>
           </div>
@@ -68,7 +69,7 @@ const Service = props => {
       <ContactSection />
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Service
+export default Service;

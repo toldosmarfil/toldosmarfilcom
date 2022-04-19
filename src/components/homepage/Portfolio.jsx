@@ -10,8 +10,6 @@ const Portfolio = ({ title, images }) => {
     const swiper = new Swiper(".swiper", {
       // Optional parameters
       direction: "horizontal",
-      slidesPerView: 5,
-      spaceBetween: 10,
 
       loop: true,
       // If we need pagination
@@ -23,6 +21,29 @@ const Portfolio = ({ title, images }) => {
       navigation: {
         nextEl: ".swiper-button-next1",
         prevEl: ".swiper-button-prev1",
+      },
+      breakpoints: {
+        250: {
+          slidesPerView: 2,
+          spaceBetween: 4,
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 4,
+        },
+        768: {
+          slidesPerView: 6,
+          spaceBetween: 8,
+        },
+        1024: {
+          slidesPerView: 6,
+          spaceBetween: 16,
+        },
+    
+        1200: {
+          slidesPerView: 5,
+          spaceBetween: 16,
+        },
       },
 
       // And if we need scrollbar

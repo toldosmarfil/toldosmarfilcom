@@ -1,9 +1,9 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import ContactSection from "../components/ContactSection"
-import Footer from "../components/footer"
-import Header from "../components/header"
-import Seo from "../components/seo"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/footer";
+import Header from "../components/header";
+import Seo from "../components/seo";
 
 const Contact = () => {
   const data = useStaticQuery(graphql`
@@ -16,8 +16,8 @@ const Contact = () => {
         }
       }
     }
-  `)
-  const content = data.markdownRemark.frontmatter
+  `);
+  const content = data.markdownRemark.frontmatter;
 
   return (
     <>
@@ -29,6 +29,7 @@ const Contact = () => {
         <div className="contact-map">
           <iframe
             src={content.contacta_map}
+            title="Map"
             width="100%"
             height="100%"
             style={{ border: "0" }}
@@ -39,7 +40,7 @@ const Contact = () => {
       </div>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;
