@@ -92,8 +92,6 @@ beneficios:
 
       En nuestra exposición podrás ver de primera mano diferentes modelos, sistemas de toldos y motorización. Desde nuestro taller confeccionamos y fabricamos nuestros propios productos.
 
-       Disponemos de taller propio con maquinaria especializada donde confeccionamos y producimos todos nuestros artículos.
-
 marcas_titulo: Trabajamos con primeras marcas
 DoubleImage:
   - DoubleImage_imagen: /assets/images/tema2/toldos1.jpg
@@ -118,7 +116,7 @@ Marcas:
   - marcas_imagen: /assets/images/tema2/brands/somfy.jpg
   - marcas_imagen: /assets/images/tema2/brands/sauleda.jpg
   - marcas_imagen: /assets/images/tema2/brands/gaviota.jpg
- - marcas_imagen: /assets/images/tema2/brands/siplan.jpg
+  - marcas_imagen: /assets/images/tema2/brands/siplan.jpg
   - marcas_imagen: /assets/images/tema2/brands/llaza.jpg
   - marcas_imagen: /assets/images/tema2/brands/mitjavila.jpg
 

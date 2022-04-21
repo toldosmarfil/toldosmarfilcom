@@ -1,6 +1,7 @@
 ---
 title: Fabricación
-subtitle: Prestamos un servicio de mantenimiento y reparación de todos nuestros productos para prolongar la vida útil de tu toldo.
+subtitle: Disponemos de taller propio con maquinaria especializada donde confeccionamos y producimos todos nuestros artículos.
+
 thumbnail: /assets/images/tema2/service3.jpg
 path: fabricacion
 servicepage: true
