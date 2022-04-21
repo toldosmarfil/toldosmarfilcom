@@ -112,7 +112,7 @@ const ContactSection = () => {
                 <p className="p1">
    
      
-                  <a href= {content.telefono}> Tel. {content.telefono} </a>
+                  <a href={`tel:${content.telefono}`}> Tel. {content.telefono} </a>
 
 
                 </p>
