@@ -120,7 +120,7 @@ const ContactSection = () => {
                 <h5 className="h3">{content.whatsapp_titulo}</h5>
                 <p className="p1">
                   <span className="variable">
-                    <a href="whatsapp://send?text=Hello World!&phone=+{content.whatsapp}">
+                  <a href={`whatsapp://send?text=Consulta desde la web !&phone=${content.whatsapp}`}>
                       {content.whatsapp}
                     </a>
                   </span>
