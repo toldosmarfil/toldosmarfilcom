@@ -1,0 +1,89 @@
+@import "../0_variables.scss";
+
+.hero4 {
+  min-height: 70vh;
+}
+.hero4-text {
+  width: 100%;
+  text-align: left;
+  padding: 0 16px;
+  padding-bottom: 100px;
+}
+.hero4-img {
+  width: 100%;
+  text-align: center;
+  img {
+    width: 100%;
+    margin-top: 100px;
+    max-width: 500px;
+  }
+}
+.hero4-cta {
+  text-align: center;
+  width: 100%;
+}
+@media (min-width: 992px) {
+
+  .hero4 {
+    min-height: 80vh;
+    flex-direction: row;
+  }
+  .hero4-text {
+    order: 1;
+    width: 50%;
+
+    padding: 0;
+    padding-top: 100px;
+  }
+
+  .hero4-img {
+    position: absolute;
+    padding-top: 100px;
+    width: 30%;
+    padding-top: 100px;
+    right: 0;
+
+    order: 2;
+
+    img {
+      margin-top: 0px;
+      width: 100%;
+      max-width: 700px;
+    }
+  }
+  .hero4-cta {
+    width: 100%;
+    padding: 8px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .is-right .hero4-text {
+    left: 10%;
+    text-align: left;
+  }
+
+  .is-right .hero4-img {
+    right: 0;
+  }
+
+  .is-right .hero4-cta {
+    text-align: left;
+    left: 10%;
+  }
+
+  .is-left .hero4-text {
+    right: 10%;
+    text-align: right;
+  }
+
+  .is-left .hero4-img {
+    left: 0;
+  }
+
+  .is-left .hero4-cta {
+    text-align: right;
+    right: 10%;
+  }
+}

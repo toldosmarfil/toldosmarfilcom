@@ -1,6 +1,6 @@
 ---
-seo_title: Bienvenidos a toldos marfil
-seo_description: Toldos marfil, la marca de los toldos en castelldefels
+seo_title: Toldos en Castelldefels - Fabricación e instalación de toldos y lonas
+seo_description: Empresa de toldos en Castelldefels al mejor precio. Somos expertos en fabricación de toldos a medida, instalación y reparación de todo tipo de toldos, pérgolas
 seo_robots: all
 title: REDISEÑA TU ESPACIO
 subtitle: LA MARCA DE LOS TOLDOS, TOLDOS MARFIL
@@ -8,7 +8,7 @@ page: true
 video: /assets/video/cover.mp4
 thumbnail: /assets/images/tema2/home2.webp
 mobilethumbnail: /assets/images/tema2/home2.webp
-inicio_title: Confíe en los profesionales del toldo
+inicio_title: Confía en los profesionales del toldo
 inicio_description_title: Más de 35 años de experiencia
 inicio_description: >-
   Somos una empresa con más de 35 años de experiencia en el sector de los
@@ -32,31 +32,31 @@ proyecto_subtitulo: Work Porfolio
 proyecto_titulo: Nuestros últimos trabajos
 listitems:
   - proyecto_imagen: /assets/images/gal-1.jpg
-    alt: First
+    alt: Pergo-Sun 96
   - proyecto_imagen: /assets/images/gal-2.jpg
-    alt: Second
+    alt: Toldo Corredero 80x40
   - proyecto_imagen: /assets/images/gal-3.jpg
-    alt: dasd
+    alt: Pergo-rain
   - proyecto_imagen: /assets/images/gal-4.jpg
-    alt: dasd
+    alt: Toldo Cofre Ares
   - proyecto_imagen: /assets/images/gal-5.jpg
-    alt: dasdas
+    alt: Vertical cerramiento
   - proyecto_imagen: /assets/images/gal-6.jpg
-    alt: eqwewqe
+    alt: Pergo-sun 96
   - proyecto_imagen: /assets/images/gal-7.jpg
-    alt: qweqw
+    alt: Toldo Cofre Dessert
   - proyecto_imagen: /assets/images/gal-8.jpg
-    alt: qweqwe
+    alt: Pergo-Rain
   - proyecto_imagen: /assets/images/gal-9.jpg
-    alt: sadasd
+    alt: Toldo Cofre Ares
   - proyecto_imagen: /assets/images/gal-10.jpg
-    alt: zxcxzc
+    alt: Toldo Corredero 80x40
   - proyecto_imagen: /assets/images/gal-11.jpg
-    alt: czxcxzc
+    alt: Pergo-Rain
   - proyecto_imagen: /assets/images/gal-12.jpg
-    alt: zxc
+    alt: Toldo Cofre Ares
   - proyecto_imagen: /assets/images/gal-13.jpg
-    alt: zxczxczxc
+    alt: Vertical cerramiento
 main_title: Elige Toldos Marfil
 beneficios:
   - proyecto_imagen: /assets/images/designer.jpg
@@ -68,7 +68,6 @@ beneficios:
 
         - Lonas acrílicas.
         - Lonas plastificadas.
-        - Fibra de vidrio.
         - Perfiles de alumnio lacado.
         - Accesorios para toldos de 1ª Calidad.
         - Asesoramiento técnico profesional.
@@ -91,16 +90,10 @@ beneficios:
     beneficios_titulo: Exposición
     beneficios_description: >-
 
-      En nuestra exposición podrá ver de primera mano diferentes modelos, sistemas de toldos y motorización. Desde nuestro taller confeccionamos y fabricamos nuestros propios productos.
+      En nuestra exposición podrás ver de primera mano diferentes modelos, sistemas de toldos y motorización. Desde nuestro taller confeccionamos y fabricamos nuestros propios productos.
 
-      #### ***Fabricación***
        Disponemos de taller propio con maquinaria especializada donde confeccionamos y producimos todos nuestros artículos.
-      #### ***Venta***
-       Ofrecemos nuestra experiencia al cliente mediante un asesoramiento, diseño y servicio post-venta especializado.
-      #### ***Instalación***
-       Garantizamos una instalación segura, fiable y duradera en todos nuestros productos con materiales y profesionales cualificados.
-      #### ***Mantenimiento***
-       Prestamos un servicio de mantenimiento y reparación de todos nuestros productos para prolongar la vida útil de su toldo.
+
 marcas_titulo: Trabajamos con primeras marcas
 DoubleImage:
   - DoubleImage_imagen: /assets/images/tema2/toldos1.jpg
@@ -122,10 +115,13 @@ main_description: >-
   Trabajamos con una amplia gama de productos de primera calidad garantizando una instalación adecuada mediante profesionales cualificados por la experiencia y la formación.
 marcas_subtitulo: Las mejores marcas en protección solar
 Marcas:
-  - marcas_imagen: /assets/images/tema2/brands/mitjavila.jpg
-  - marcas_imagen: /assets/images/tema2/brands/sauleda.jpg
-  - marcas_imagen: /assets/images/tema2/brands/llaza.jpg
-  - marcas_imagen: /assets/images/tema2/brands/gaviota.jpg
   - marcas_imagen: /assets/images/tema2/brands/somfy.jpg
-  - marcas_imagen: /assets/images/tema2/brands/siplan.jpg
+  - marcas_imagen: /assets/images/tema2/brands/sauleda.jpg
+  - marcas_imagen: /assets/images/tema2/brands/gaviota.jpg
+ - marcas_imagen: /assets/images/tema2/brands/siplan.jpg
+  - marcas_imagen: /assets/images/tema2/brands/llaza.jpg
+  - marcas_imagen: /assets/images/tema2/brands/mitjavila.jpg
+
+
+ 
 ---

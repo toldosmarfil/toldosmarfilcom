@@ -49,8 +49,10 @@ const Hero = ({ heading, text, button, bgImage, bgMobileImage, video }) => {
                       className="mb-32"
                       width="270px"
                       height="240px"
+                      placeholder="tracedSVG"
+                      loading="eager"
                       objectFit="contain"
-                      src="../assets/images/tema2/logo-invert.png"
+                      src="../../theme/assets/images/tema2/logo-invert.png"
                       alt=""
                     />
 
@@ -81,7 +83,7 @@ const Hero = ({ heading, text, button, bgImage, bgMobileImage, video }) => {
               </div>
               <div className="col-xs-6 col-sm-6 col-md-4">
                 <div className="text-16-b"> 03 COMPROMISO </div>
-                <p> Damos vida a tus espacios. Rediseñamos ambientes.</p>
+                <p> Toldos Marfil es sinónimo de calidad y compromiso.</p>
               </div>
             </div>
           </div>

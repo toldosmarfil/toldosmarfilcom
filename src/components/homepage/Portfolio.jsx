@@ -57,7 +57,7 @@ const Portfolio = ({ title, images }) => {
   const imageRef = React.useRef("")
   return (
     <>
-      <section className="bg-cream pt-section pb-md">
+      <section className="bg-cream pt-section pb-section">
         <div className="container mb-16  ">
           <div className="row ">
             <div className=" col-xs-12 col-sm-6 is-flex flex-column content-center  ">

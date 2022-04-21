@@ -48,14 +48,14 @@ beneficios:
 marcas_titulo: Trabajamos los líderes del mercado en protección solar
 beneficio_subtitulo: Somos Toldos Marfil
 beneficio_description: Texto explicativos sobre nosotros
-beneficio_titulo: Beneficios de toldos marfil
+beneficio_titulo: Beneficios de Toldos Marfil
 page: true
 seo_title: Sobre Toldos marfil
 seo_description: Toldos marfil | Quienes somos
 title: Sobre Nosotros
 subtitle: Toldos marfil
 inicio_title: Sobre      Toldos Marfil
-inicio_description_title: Confíe en los profesionales del toldo
+inicio_description_title: Confía en los profesionales del toldo
 
 
 marcas_subtitulo: Siempre con las primeras marcas

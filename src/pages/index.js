@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import { Helmet } from "react-helmet";
-import "../../scss/style.scss";
-import "../../scss/components/header2.scss";
+import "../../theme/scss/style.scss";
+import "../../theme/scss/components/header2.scss";
 import Footer from "../components/footer";
 import Hero from "../components/Hero";
 import MainSection from "../components/MainSection";

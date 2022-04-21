@@ -72,8 +72,15 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
+        name: `theme`,
+        path: `${__dirname}/theme/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
         name: `markdown-pages`,
-        path: `${__dirname}/src/markdownPages`,
+        path: `${__dirname}/theme/markdownPages`,
       },
     },
     {
@@ -87,21 +94,21 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `fonts`,
-        path: `${__dirname}/src/assets/fonts`,
+        path: `${__dirname}/theme/assets/fonts`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `blog`,
-        path: `${__dirname}/blog`,
+        path: `${__dirname}/theme/blog`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `services`,
-        path: `${__dirname}/services`,
+        path: `${__dirname}/theme/services`,
       },
     },
     {
@@ -122,7 +129,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/assets/images/tema2/favicon.png`, // This path is relative to the root of the site.
+        icon: `theme/assets/images/tema2/favicon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

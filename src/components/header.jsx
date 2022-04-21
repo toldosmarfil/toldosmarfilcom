@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
-import "../../scss/components/header2.scss";
+import "../../theme/scss/components/header2.scss";
 
 const Header = ({ offset }) => {
   const [open, setOpen] = useState(false);

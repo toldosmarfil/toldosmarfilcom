@@ -7,7 +7,7 @@ const LatestNews = props => {
   const { edges: posts } = data.allMarkdownRemark
   return (
     <>
-      <section className="bg-cream pt-section pb-md">
+      <section className="bg-cream pt-section pb-section">
         <div className="container">
           <div className="row pb-48">
             <div className="col-xs-6 mb-16">

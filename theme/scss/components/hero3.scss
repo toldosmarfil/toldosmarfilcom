@@ -1,0 +1,83 @@
+@import "../0_variables.scss";
+
+.hero3 {
+  min-height: 70vh;
+}
+.hero3-text {
+  width: 100%;
+  text-align: left;
+  padding: 0 16px;
+}
+.hero3-img {
+  width: 100%;
+  text-align: center;
+  img {
+    margin-top: 100px;
+    max-width: 400px;
+  }
+}
+.hero3-cta {
+  text-align: left;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .hero3 {
+    min-height: 80vh;
+  }
+  .hero3-text {
+    width: 50%;
+    top: 50%;
+    padding: 0;
+  }
+
+  .hero3-text {
+    position: absolute;
+    transform: translateY(-50%);
+  }
+  .hero3-img {
+    width: 90%;
+    top: 0%;
+    right: 0;
+    max-width: 700px;
+    position: absolute;
+    transform: translateY(20%);
+    img {
+      margin-top: 0px;
+      max-width: 700px;
+    }
+  }
+  .hero3-cta {
+    width: 50%;
+    padding: 8px;
+  }
+}
+
+@media (min-width: 992px) {
+  .is-right .hero3-text {
+    left: 10%;
+    text-align: left;
+  }
+
+  .is-right .hero3-img {
+    right: 0;
+  }
+
+  .is-right .hero3-cta {
+    text-align: left;
+    left: 10%;
+  }
+
+  .is-left .hero3-text {
+    right: 10%;
+    text-align: right;
+  }
+
+  .is-left .hero3-img {
+    left: 0;
+  }
+
+  .is-left .hero3-cta {
+    text-align: right;
+    right: 10%;
+  }
+}
