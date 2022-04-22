@@ -37,8 +37,8 @@ const Header = ({ offset }) => {
                 <Link className="fluid-2-l" to="/">
                   <h2 className="h2 logoon">
                     <StaticImage
-                      src="../../theme/assets/images/tema2/logo.png"
-                      alt="toldosmarfil logo"
+                      src="../assets/images/tema2/logo.png"
+                      alt="logo"
                     />
                   </h2>
                 </Link>
