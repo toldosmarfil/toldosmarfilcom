@@ -34,11 +34,13 @@ const Header = ({ offset }) => {
           <div className="container header2-inner">
             <div className="row">
               <div className="col-xs-6  text-left align-middle">
-                <Link className="fluid-2-l" to="/">
+              <Link className="fluid-2-l" to="/">
                   <h2 className="h2 logoon">
                     <StaticImage
-                      src="../assets/images/tema2/logo.png"
+                      src="../../theme/assets/images/tema2/logo.png"
                       alt="logo"
+                      placeholder="tracedSVG"
+                      loading="eager"
                     />
                   </h2>
                 </Link>

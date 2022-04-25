@@ -1,6 +1,6 @@
 ---
 seo_title: Toldos en Castelldefels - Fabricación e instalación de toldos y lonas
-seo_description: Empresa de toldos en Castelldefels al mejor precio. Somos expertos en fabricación de toldos a medida, instalación y reparación de todo tipo de toldos, pérgolas
+seo_description: Empresa de toldos en Castelldefels al mejor precio. Somos expertos en fabricación de toldos a medida, instalación y reparación de todo tipo de toldos.
 seo_robots: all
 title: REDISEÑA TU ESPACIO
 subtitle: LA MARCA DE LOS TOLDOS, TOLDOS MARFIL
