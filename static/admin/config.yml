@@ -1,6 +1,9 @@
 backend:
   name: git-gateway
-  repo: manuelruizredondo/weblabel
+  #repo: manuelruizredondo/weblabel
+  repo: toldosmarfil/toldosmarfilcom
+
+
   #repo: ali-baker/huss-gatsby
 media_folder: "static/assets/images"
 public_folder: "/assets/images"
