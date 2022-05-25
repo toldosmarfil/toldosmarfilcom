@@ -114,7 +114,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
-        url: `https://mussa-web.netlify.app`, // required!
+        url: `https://www.toldosmarfil.com`, // required!
       },
     },
 
