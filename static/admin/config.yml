@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
-  #repo: manuelruizredondo/weblabel
-  branch: master
-  repo: toldosmarfil/toldosmarfilcom
+  repo: manuelruizredondo/weblabel
+  branch: main
+  #repo: toldosmarfil/toldosmarfilcom
 
 
   #repo: ali-baker/huss-gatsby
