@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preact`,
+    `gatsby-plugin-google-tagmanager`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
@@ -115,6 +116,22 @@ module.exports = {
       resolve: `gatsby-plugin-netlify-identity`,
       options: {
         url: `https://www.toldosmarfil.com`, // required!
+      },
+    },
+    {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+
+        id: "G-VD9XDZ0ZVW",
+        // datalayer to be set before GTM is loaded
+        // should be a stringified object or object
+        //
+        // Defaults to null
+        defaultDataLayer: function () {
+          return {
+            pageType: window.pageType,
+          }
+        },
       },
     },
 
