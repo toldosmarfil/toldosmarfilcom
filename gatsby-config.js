@@ -12,7 +12,6 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-preact`,
-    `gatsby-plugin-google-tagmanager`,
     {
       resolve: `gatsby-plugin-sharp`,
       options: {
