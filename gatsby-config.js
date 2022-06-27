@@ -121,7 +121,7 @@ module.exports = {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
 
-        id: "G-VD9XDZ0ZVW",
+        id: "GTM-WMT9TLG",
         // datalayer to be set before GTM is loaded
         // should be a stringified object or object
         //
