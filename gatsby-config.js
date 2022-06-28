@@ -2,8 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Toldos Marfil | los instaladores de toldos`,
     description: `Toldos Marfil.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    author: `Digitalstrategy`,
+    siteUrl: `https://www.toldosmarfil.com`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
